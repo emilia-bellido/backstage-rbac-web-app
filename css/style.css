@@ -1,0 +1,187 @@
+:root {
+
+    --bg-dark: #121212;
+    --bg-card: #1E1E26;
+
+    --accent-gold: #FFD700;
+    --accent-purple: #8A2BE2;
+    --status-active: #00D4FF;
+
+    --text-main: #FFFFFF;
+    --grey: #A0A0A0;
+}
+
+/*
+Header/Title settings
+ */
+ .title{
+     font-family: "Rubik Mono One", monospace;
+     font-weight: 400;
+     font-style: normal;
+     color: var(--accent-gold);
+ }
+
+ /*
+ Body text
+  */
+.body-text {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-main);
+}
+
+/*
+Log in button Style
+ */
+.button-purple{
+    background-color: var(--accent-purple);
+    color: var(--text-main);
+}
+
+/*
+Transparency
+ */
+
+.nobg{
+    background-color: #64646400 !important;
+}
+
+/*
+Color yellow: so can be added on my html
+ */
+.yellow{
+    color: var(--accent-gold) !important;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden; /*no scroll to right or left */
+    padding-top: 100px; /*so you can see the top of the list of users*/
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    transition: 0.9s ease-in-out all;
+}
+
+nav{
+     background-color: var(--bg-dark);
+}
+
+.modal-content{
+    background-color: var(--bg-dark);
+}
+
+/*Input login Design*/
+.modal-content{
+     border: 2px solid var(--accent-gold);
+}
+
+.input-group>.form-control{
+    background-color: #64646400 !important;
+    box-shadow: none;
+    transition: none;
+    border: none;
+
+    border-radius: 0;
+    caret-color: white; /*cursor color*/
+    color: white;
+}
+
+#password::placeholder, #userName::placeholder{
+    color: white;
+}
+
+.input-group-text{
+    border-radius: 0;
+    border: none;
+
+}
+
+/*
+BUTTON
+ */
+
+#userBtn:hover {
+    background-color: var(--accent-gold);
+    transform: scale(0.98);    /* Makes it look like it's being pushed in */
+}
+
+/********CARDS STYLING**/
+.adminCards {
+    background-color: black;
+    color: white;
+    border: 3px solid var(--status-active);
+    box-shadow: 3px 3px 10px var(--status-active);
+}
+
+.generalCards{
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    box-shadow: 3px 3px 10px var(--grey );
+    border: 3px solid var(--accent-gold);
+}
+
+
+#mainContainer{
+    background-color: rgb(9 4 4 / 45%);
+    backdrop-filter: blur(6px);
+}
+
+#line{
+    height: 2px;
+    border-width: 0;
+    opacity: 1;
+    color: var(--grey);
+    background-color: var(--grey);
+}
+
+
+/*
+layout of cards
+ */
+#containerAdmin{
+    border: 1px solid var(--accent-gold);
+    border-radius: 15px;
+}
+
+
+.card{
+    transition: 0.5s ease-in-out all;
+}
+.card:hover{
+    transform: scale(1.05);
+
+}
+
+/*
+logout drop down
+ */
+
+#logoutNav:hover{
+    background-color: var(--accent-gold);
+    color: black;
+}
+
+#logoutNav:active{
+    background-color: var(--accent-gold);
+    color: black;
+}
+
+
+/*
+media query for nav bar
+ */
+
+#dropdownLogout{
+    left:-95px;
+}
+@media (max-width: 455px) {
+    #dropdownLogout{
+        left: 37px;
+    }
+}
+
